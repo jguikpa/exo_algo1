@@ -1,0 +1,112 @@
+ALGORITHM
+
+ALGORITHM Lecture
+VAR
+   phrase:= STRING;
+   phrase[255];
+   mots:=STRING;
+   i:= INTEGER;
+   tphrase:=INTEGER;
+   voy:= INTEGER;
+   voy:=0;
+   i:=0;
+
+BEGIN
+    Write("Entrez une phrase");
+   
+    Read(phrase);
+    tphrase:=phrase.lenght;
+
+    FOR i FROM 0 TO phrase.lenght STEP 1  DO
+        if(phrase[i] == " "){
+            mots:= mots+1
+        }
+        
+        if ((phrase[i] == 'a' || phrase[i] == 'e' || phrase[i] ==
+        'i' || phrase[i] == 'o' || phrase[i] == 'u') ||
+        (phrase[i] == 'A' || sentence[i] == 'E' || phrase[i] ==
+        'I' || sphrase[i] == 'O' || phrase[i] == 'U'))
+        {
+            voy = voy + 1;
+        }
+
+
+    END_FOR
+   
+        Write("Nombre de phrases:")
+        Write(tphrase);
+        Write(" Nombre de mots ")
+        Write(mots);
+        Write(" Nombre de voyelles:")
+        Write (voy);
+
+    END 
+
+
+
+
+
+
+
+
+
+
+
+ALGORITHM Compairason_et_adition
+VAR
+    sum: INTEGER :=0
+    tabl1 : ARRAY_OF INTEGER[12];
+    tabl2 : ARRAY_OF INTEGER[12];
+    curentValue: INTEGER :=0;
+    i:=0;
+    j:=;
+BEGIN
+    Write("Veillez remplir le premier tableau");
+
+    
+    FOR i FROM 0 TO tabl1.lenght -1 STEP 1  DO
+       Read(tabl1[i]);
+    END_FOR
+    {
+
+    Write(" Veillez remplir le deuxieme tableau:");}
+
+    
+    FOR i FROM 0 TO tabl2.lenght -1 STEP 1  DO
+
+    Read(tabl2);
+    END_FOR
+
+
+    FOR i FROM 0 TO tabl1.lenght -1 STEP 1  DO
+    curentValue:= tabl1[i];
+    END_FOR
+
+    FOR j FROM 0 TO tabl1.lenght -1 STEP 1  DO
+    IF (tabl2[j] == curentValue:= tabl2[j])
+    { break;
+    }
+        IF (tabl2[j]!== curentValue && tabl2.lenght -1 == j) 
+        {sum += curentValue;
+        }
+    END_FOR
+
+
+    FOR i FROM 0 TO tabl1.lenght -1 STEP 1  DO
+    curentValue:= tabl1[i];
+
+
+       FOR j FROM 0 TO tabl2.lenght -1 STEP 1  DO
+         IF (tabl2[j == curentValue:= tabl1[j]])
+        { break;
+        }
+        IF (tabl1[j]!== curentValue && tabl1.lenght -1 == j) 
+        {sum += curentValue;
+        }
+            
+        END_FOR
+
+    END_FOR
+
+
+END
